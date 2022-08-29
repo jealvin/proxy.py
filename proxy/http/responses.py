@@ -42,7 +42,7 @@ PROXY_AUTH_FAILED_RESPONSE_PKT = memoryview(
         reason=b'Proxy Authentication Required',
         headers={
             PROXY_AGENT_HEADER_KEY: PROXY_AGENT_HEADER_VALUE,
-            b'Proxy-Authenticate': b'Basic',
+            b'Proxy-Authenticate': b'Basic realm="Ini Ninja Proxy-Ku!"',
         },
         body=b'Proxy Authentication Required',
         conn_close=True,
